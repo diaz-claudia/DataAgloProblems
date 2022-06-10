@@ -1,5 +1,7 @@
 <h2> Blind 75 Leet Code Program </h2>
 Solving Algorithms problems in C# 
+
+---
 ## Array
 
 - [ ] [Two Sum](https://leetcode.com/problems/two-sum/)

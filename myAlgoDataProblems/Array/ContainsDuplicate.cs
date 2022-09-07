@@ -30,24 +30,38 @@ public class ContainsDuplicate
 			return false;
 
 		}
-		// O(n)
-		//
-		//https://leetcode.com/problems/first-unique-character-in-a-string/
-		//Given a string, find the first non-repeating character in it and return its index.If it doesn't exist, return -1.
-
-		//check 
-
-		//https://leetcode.com/problems/first-unique-character-in-a-string/
-		//Given a string, find the first non-repeating character in it and return its index.If it doesn't exist, return -1.
-		// O(1)
-
-		//Given two strings, write a method to decide if one is a permutation
-		//of the other.
-
-		//Two strings that are permutations should have the same characters
-		//but in different orders.
-		//1.2, 1.4 CTCI
 
 
-	
+	public bool ContainsDuplicate2(int[] nums)
+	{
+		Array.Sort(nums);
+		for (int i = 0; i < nums.Length; i++)
+		{
+			if (nums[i] == nums[i + 1])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	// O(n)
+	//
+	//https://leetcode.com/problems/first-unique-character-in-a-string/
+	//Given a string, find the first non-repeating character in it and return its index.If it doesn't exist, return -1.
+
+	//check 
+
+	//https://leetcode.com/problems/first-unique-character-in-a-string/
+	//Given a string, find the first non-repeating character in it and return its index.If it doesn't exist, return -1.
+	// O(1)
+
+	//Given two strings, write a method to decide if one is a permutation
+	//of the other.
+
+	//Two strings that are permutations should have the same characters
+	//but in different orders.
+	//1.2, 1.4 CTCI
+
+
+
 }
